@@ -1,1 +1,27 @@
-<h1>Coming soon to a device near you!</h1>
+---
+layout: splash
+---
+
+<div class="socialMedia pull-right">
+  <div class="row">
+    <a href="#"><i class="fa fa-behance ghost-sm"></i></a>
+    <a href="#"><i class="fa fa-dribbble ghost-sm"></i></a>
+    <a href="http://www.github.com/Austintacious"><i class="fa fa-github ghost-sm"></i></a>
+  </div>
+  
+  <div class="row">
+    <a href="https://www.linkedin.com/pub/austin-winslow/50/163/217"><i class="fa fa-linkedin ghost-sm"></i></a>
+    <a href="https://twitter.com/Austintacious1"><i class="fa fa-twitter ghost-sm"></i></a>
+    <a href="http://austintaciously.tumblr.com"><i class="fa fa-tumblr ghost-sm"></i></a>
+  </div>
+</div>
+
+<div class="home pull-right">
+  {% for page in site.pages %}
+    {% if page.title %}
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+      <button class="ghost">{{ page.title }}</button>
+    </a>
+    {% endif %}
+  {% endfor %}
+</div>
