@@ -1,0 +1,81 @@
+#navLinks {
+    width: 0px;
+    margin-left: 50px;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+
+    opacity: 0;
+
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0.65em;
+    left: 1.5em;
+}
+
+#navLinks .row {
+    margin-left: 0px;
+}
+
+#navLinks .row a {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 2em;
+    text-decoration: none;
+}
+
+#navLinks.in {
+    width: 40%;
+    margin-left: 50px;
+    opacity: 1;
+}
+
+#navLinks.in .row {
+    margin-left: 0px;
+}
+
+#nav-toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}

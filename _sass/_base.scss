@@ -8,17 +8,22 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-.home {
-    margin-top: 26em;
-    margin-right: -6.5em;
-}
-
 #indexBody {
     background: url('/assets/winslow.jpg') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+#indexBody > .page-content {
+    padding: 0;
+}
+
+.socialMedia {
+    position: absolute;
+    bottom: 0.4em;
+    right: 2em;
 }
 
 button.ghost {
