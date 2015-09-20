@@ -1,0 +1,19 @@
+<div id="floater">
+  <div class="row">
+    <div class="col-xs-12">
+      <a id="switch-blurbs" href="#"><span class="fa fa-plus"></span></a>
+      <p id="blurb">
+        <strong>Rails developer</strong> with experience crafting innovate and impactful experiences for users across the world.  Bitten by the travel bug; borderline-ridiculous bibliophile; hispanohablante casual; indulgent foodie; part-time doodler; and aspiring design technologist / game-shaker / change-maker. (S)he who does not know, can know from learning.<br><strong>Onward & upward!</strong>
+      </p>
+      <p id="links">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link text-center col-md-6" href="{{ page.url | prepend: site.baseurl }}">
+            {{ page.title | upcase }}
+          </a>
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+</div>

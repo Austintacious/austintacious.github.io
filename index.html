@@ -9,24 +9,13 @@ extra_js:
 ---
 
 <div class="socialMedia">
-  <a href="#"><i class="fa fa-behance ghost-sm"></i></a>
-  <a href="#"><i class="fa fa-dribbble ghost-sm"></i></a>
   <a href="http://www.github.com/Austintacious"><i class="fa fa-github ghost-sm"></i></a>
+  <a href="https://twitter.com/_wynzlo"><i class="fa fa-twitter ghost-sm"></i></a>
   <a href="https://www.linkedin.com/pub/austin-winslow/50/163/217"><i class="fa fa-linkedin ghost-sm"></i></a>
-  <a href="https://twitter.com/Austintacious1"><i class="fa fa-twitter ghost-sm"></i></a>
-  <a href="http://austintaciously.tumblr.com"><i class="fa fa-tumblr ghost-sm"></i></a>
+  <a href="https://www.behance.net/austinwinslow"><i class="fa fa-behance ghost-sm"></i></a>
 </div>
 
 <div id="navLinks" class="home">
-  <div class="row">
-    {% for page in site.pages %}
-      {% if page.title %}
-      <a class="page-link text-center" href="{{ page.url | prepend: site.baseurl }}">
-        {{ page.title | upcase }}
-      </a>
-      {% endif %}
-    {% endfor %}
-  </div>
 </div>
 
 <a id="nav-toggle" data-toggle="toggle" data-target="#navLinks">

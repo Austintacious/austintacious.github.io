@@ -8,60 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-#indexBody {
-    background: url('/assets/winslow.jpg') no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-#indexBody > .page-content {
-    padding: 0;
-}
-
-.socialMedia {
-    position: absolute;
-    bottom: 0.4em;
-    right: 2em;
-}
-
-button.ghost {
-    min-width: 6em;
-    display: block;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px;
-    color: #333;
-    background-color: transparent;
-    border-color: #CCC;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1.5px solid black;
-    white-space: nowrap;
-}
-
-.ghost-sm {
-    min-width: 3em;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-    color: #333;
-    background-color: transparent;
-    border-color: #CCC;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1.5px solid black;
-    white-space: nowrap;
-}
-
 /**
  * Basic styling
  */

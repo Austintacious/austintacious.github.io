@@ -1,19 +1,20 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: What I'm Reading
+permalink: /the_bookshelf/
 ---
 
-<h1 class="page-heading">Posts</h1>
+<h1 class="page-heading">What I'm Reading</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for book in site.books %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <span class="post-meta">{{ book.author }}</span>
+        {{ book.title }}
+        {{ book.description }}
+        <!-- <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h2> -->
       </li>
     {% endfor %}
   </ul>

@@ -1,0 +1,148 @@
+---
+# front matter
+---
+
+#indexBodyyy {
+    background: url('/assets/rio.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.card {
+    background: url('/assets/rio.jpg') center center no-repeat;
+    border: 1px solid white;
+    height: 100vh;
+}
+
+#card1 {
+    background-position-x: -25em;
+    background-position-y: -15em;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#card2 {
+    background-position-x: 85%;
+    background-position-y: -35em;
+}
+#card3 {
+    background-position-x: -50em;
+    background-position-y: -10em;
+}
+#card4 {
+    background: url('/assets/corcovado.jpg') center center no-repeat;
+    border: 1px solid white;
+    height: 100vh;
+    background-position-y: 90%;
+}
+
+#card1, #card3 {
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+#floater {
+    background-color: white;
+    margin-top: 12.5%;
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.35);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.35);
+    box-shadow: 0 10px 20px rgba(0,0,0,.35);
+    padding: 2em;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.15em;
+    & strong { font-size: 1.2em; }
+}
+
+#indexBodyTBD {
+    background: url('/assets/winslow.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#indexBody > .page-content {
+    padding: 0;
+}
+
+.socialMedia {
+    position: absolute;
+    bottom: 0.4em;
+    right: 2em;
+}
+
+button.ghost {
+    min-width: 6em;
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1.5px solid white;
+    white-space: nowrap;
+}
+
+.ghost-sm {
+    min-width: 3em;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1.5px solid white;
+    white-space: nowrap;
+}
+
+/* Small devices (tablets, 768px and up) */
+/*@media screen and (device-width: 768px) { 
+}*/
+
+/* Medium devices (desktops, 992px and up) */
+/*@media (min-width: @screen-md-min) { 
+
+}*/
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: @screen-lg-min) {
+}*/
+
+/* iPad with portrait orientation */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .card {
+        height: 1024px;
+    }
+}
+
+/* iPad with landscape orientation */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    .card {
+        height: 768px;
+    }
+}
+
+/* iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+    .card {
+        height: 500px;
+    }
+}

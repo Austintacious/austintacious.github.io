@@ -9,6 +9,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://austintacious.github.io" # the base hostname & protocol for your site
 twitter_username: Austintacious1
 github_username:  Austintacious
+sass:
+  sass_dir: _sass
 
 # Build settings
 markdown: kramdown
