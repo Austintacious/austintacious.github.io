@@ -1,18 +1,26 @@
-<div id="floater">
+<div id="floater" class="folded">
   <div class="row">
     <div class="col-xs-12">
-      <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
-        <a id="posts" class="page-link text-center" href="{{ '/posts' | prepend: site.baseurl }}"> Posts </a>  
-      </div>
-      <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
-        <a id="bookshelf" class="page-link text-center" href="{{ '/the_bookshelf' | prepend: site.baseurl }}"> Bookshelf </a>  
-      </div>
-      <hr>
+      
+      <hr class="rule">
+    
       <p id="blurb">
-        <strong>Rails developer</strong> with experience crafting innovate and impactful experiences for users across the world.  Bitten by the travel bug; borderline-ridiculous bibliophile; hispanohablante casual; indulgent foodie; part-time doodler; and aspiring design technologist / game-shaker / change-maker. (S)he who does not know, can know from learning.<br><br><strong>Onward & upward!</strong>
+        <strong>Rails developer</strong> with experience crafting innovate and impactful experiences for users across the world.  Bitten by the travel bug; borderline-ridiculous bibliophile; hispanohablante casual; indulgent foodie; part-time doodler; and aspiring design technologist / game-shaker / change-maker. (S)he who does not know, can know from learning.<br><br class="rule"><strong>Onward & upward!</strong>
       </p>
-      <hr>
-      <div class="text-center"> <img src="/assets/Ohu.png" style="height: 2em;"></div>
+
+      <div id="links" class="row">
+        <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+          <a id="posts" class="page-link text-center" href="{{ '/posts' | prepend: site.baseurl }}"> Posts </a>  
+        </div>
+        <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+          <a id="bookshelf" class="page-link text-center" href="{{ '/the_bookshelf' | prepend: site.baseurl }}"> Bookshelf </a>  
+        </div>
+      </div>
+
+      <hr class="rule">
+
+      <div class="text-center"><img id="ohu" src="/assets/Ohu.png"></div>
+      
     </div>
   </div>
 </div>

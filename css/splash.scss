@@ -41,6 +41,7 @@
     background-position-y: 90%;
 
     & a#posts {
+        text-align: -webkit-center;
         transform: translate(-50%, -50%) scaleX(1);
     }
 
@@ -53,6 +54,8 @@
         
         &:hover {
             text-decoration: none;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
         }
     }
 }
@@ -72,17 +75,25 @@
     font-size: 1.15em;
     width: 90%;
     & strong { font-size: 1.2em; }
+    & img#ohu {
+        height: 2em;
+        width: 2em;
+    }
+    hr {
+        border-top: 1px solid #D6D6D6;
+    }
 }
 
 #floater, #posts, #bookshelf {
     font-family: 'Rokkitt', serif;
+    text-align: -webkit-left;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-a#posts, a#bookshelf {
+#card1 a#posts, #card3 a#bookshelf {
     color: white;
     font-size: 4em;
     line-height: 40px;
@@ -151,18 +162,123 @@ button.ghost {
     white-space: nowrap;
 }
 
+.folded {
+  position: relative;
+  -webkit-box-shadow: -5px 7px 5px rgba(0,0,0,0.8);
+  -moz-box-shadow: -5px 7px 5px rgba(0,0,0,0.8);
+  box-shadow: -5px 7px 5px rgba(0,0,0,0.8);
+}
+ 
+.folded:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 2em solid #eee;
+  border-right: 2em solid transparent;
+  -webkit-box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: -7px 7px 7px rgba(0,0,0,0.3);
+}
+ 
+.folded:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 2em solid #044F65; 
+  border-left: 2em solid transparent;
+}
+
 /* Small devices (tablets, 768px and up) */
-/*@media screen and (device-width: 768px) { 
-}*/
+@media screen and (max-width: 786px) and (orientation: landscape) {
+    button#navLink {
+        top: 0.5em;
+        left: 0.5em;
+    }
+    #floater {
+        width: 80%;
+        top: 48%;
+        & img {
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
+}
 
-/* Medium devices (desktops, 992px and up) */
-/*@media (min-width: @screen-md-min) { 
+@media screen and (max-width: 687px) and (orientation: landscape) { 
+    #floater {
+        width: 75%;
+        top: 48%;
+        height: 75%;
+        #posts, #bookshelf {
+            margin-top: 40%;
+        }
+        hr.rule {
+            display: none;
+        }
+    }
+}
 
-}*/
+@media screen and (max-width: 568px) and (orientation: landscape) {
+    #floater {
+        padding: 1em;
+        #posts, #bookshelf {
+            margin-top: 45%;
+        }
+        .rule {
+            display: none;
+        }
+    }
+}
 
-/* Large devices (large desktops, 1200px and up) */
-/*@media (min-width: @screen-lg-min) {
-}*/
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    #floater {
+        height: 75%;
+        & img#ohu {
+            display: none;
+            margin-top: 45%;
+        }
+        .rule {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-height: 740px) and (orientation: portrait) { 
+    #floater {
+        & img#ohu {
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
+    button#navLink {
+        top: 0.5em;
+        left: 0.5em;
+    }
+}
+
+@media screen and (max-height: 480px) and (orientation: portrait) { 
+    #floater {
+        padding: 1em;
+
+        & img#ohu {
+            height: 1.5em;
+            width: 1.5em;
+        }
+        .rule {
+            display: none;
+        }
+    }
+    button#navLink {
+        top: 0.5em;
+        left: 0.5em;
+    }
+}
 
 /* iPad with portrait orientation */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
