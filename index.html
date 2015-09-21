@@ -6,6 +6,7 @@ extra_css:
 extra_js:
   - js/main.js
   - js/jquery.fullPage.min.js
+  - js/transformicons.min.js
 ---
 
 <div class="socialMedia">
@@ -15,9 +16,7 @@ extra_js:
   <a href="https://www.behance.net/austinwinslow"><i class="fa fa-behance ghost-sm"></i></a>
 </div>
 
-<div id="navLinks" class="home">
-</div>
-
-<a id="nav-toggle" data-toggle="toggle" data-target="#navLinks">
-  <span></span>
-</a>
+<button id="navLink" type="button" class="home tcon tcon-menu--xbutterfly" aria-label="toggle menu">
+  <span class="tcon-menu__lines" aria-hidden="true"></span>
+  <span class="tcon-visuallyhidden"></span>
+</button>

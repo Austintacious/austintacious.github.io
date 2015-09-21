@@ -3,13 +3,19 @@
 
   {% include head.html %}
 
-  <body id="indexBody">
-    <div id="card1" class="card col-sm-4 hidden-xs"></div>
-    <div id="card2" class="card col-sm-4 hidden-xs"> {% include floater.html %} </div>
-    <div id="card3" class="card col-sm-4 hidden-xs"></div>
-
-    <div id="card4" class="card col-xs-12 hidden-sm hidden-md hidden-lg"> {% include floater.html %} </div>
-
+  <body id="indexBody">    
+    <div id="card1" class="card col-sm-4 hidden-xs">
+      <a id="posts" class="page-link text-center" href="{{ '/posts' | prepend: site.baseurl }}"><hr> Posts <hr></a>
+    </div>
+    <div id="card2" class="card col-sm-4 hidden-xs">
+      {% include floater.html %}
+    </div>
+    <div id="card3" class="card col-sm-4 hidden-xs">
+      <a id="bookshelf" class="page-link text-center" href="{{ '/the_bookshelf' | prepend: site.baseurl }}"><hr> Bookshelf <hr></a>
+    </div>
+    <div id="card4" class="card col-xs-12 hidden-sm hidden-md hidden-lg">
+      {% include floater.html %}
+    </div>
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
