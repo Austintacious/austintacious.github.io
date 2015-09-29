@@ -2,9 +2,10 @@
 title: _wynzlo.inspect
 email: awinslow@camsys.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Ruby on Rails developer in Boston, experienced with the full stack;
+  nourishing a growing passion for fantastic UX/UI and crafting innovate 
+  experiences that change our world. Onward & upward.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://austintacious.github.io" # the base hostname & protocol for your site
 twitter_username: _wynzlo
