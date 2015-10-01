@@ -16,6 +16,10 @@
         {% endfor %}
     {% endif %}
 
+    {% if page.title == "Bookshelf" %}
+        <link rel="stylesheet" href="/css/bookshelf.css">
+    {% endif %}
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

@@ -1,0 +1,71 @@
+---
+# front matter
+---
+body {
+/*  background-color: #181C19;*/
+}
+
+body div#bookshelf section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -mx-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+ul.book-list {
+  margin: 0;
+}
+
+a.book {
+  width: 25%;
+  margin-top: 6em;
+  &:hover img {
+    opacity: 0.3;
+  }
+ /* &:hover h2 {
+    color: #BC5125
+  }*/
+}
+
+.book-container {
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  margin-left: 10%;
+  transition: opacity 0.25s ease;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+}
+
+.book-info h2,
+.book-info h3 {
+  margin-top: 0;
+  padding-left: 10%;
+  padding-top: 0.5em;
+  font-size: 1.25em;
+}
+
+.book-info h2 {
+  border-top: 0.5em solid grey;
+  margin: 0;
+}
+
+.book-info h3 {
+  padding-top: 0;
+}

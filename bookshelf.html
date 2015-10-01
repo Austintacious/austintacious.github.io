@@ -1,22 +1,20 @@
 ---
-layout: page
-title: What I'm Reading
-permalink: /the_bookshelf/
+layout: bookshelf
+title: Bookshelf
+permalink: /bookshelf/
 ---
 
-<h1 class="page-heading">What I'm Reading</h1>
+{% for book in site.bookshelf %}
+  <a class="book" href="{{ book.link_to_book }}" target="_blank">
+    <div class="book-container">
+      <img src="{{ book.cover_image }}">  
+    </div>
+    <div class="book-info text-left">
+      <h2 class="book-title"><strong>{{ book.title }}</strong></h2>
+      <h3 class="book-author">{{ book.author }}</h3>
+    </div>
+  </a>
+{% endfor %}
 
-  <ul class="post-list">
-    {% for book in site.books %}
-      <li>
-        <span class="post-meta">{{ book.author }}</span>
-        {{ book.title }}
-        {{ book.description }}
-        <!-- <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2> -->
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
